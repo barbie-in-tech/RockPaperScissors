@@ -48,15 +48,7 @@ class _MainAppState extends State<MainApp> {
               begin: Alignment.bottomLeft,
               end: Alignment.topRight,
               colors: [
-//                Color(0xff27368f),
-//                Color(0xff27468f),
-//                Color(0xff27548f),
-//
-//                Color(0xff27468f),
-//                Color(0xff27368f)
-
                 Color(0xff5c1111),
-
                 Color(0xff4a0e0e),
                 Color(0xff360808),
                 Color(0xff240303),
