@@ -43,7 +43,26 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.indigoAccent,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.bottomLeft,
+              end: Alignment.topRight,
+              colors: [
+//                Color(0xff27368f),
+//                Color(0xff27468f),
+//                Color(0xff27548f),
+//
+//                Color(0xff27468f),
+//                Color(0xff27368f)
+
+                Color(0xff5c1111),
+
+                Color(0xff4a0e0e),
+                Color(0xff360808),
+                Color(0xff240303),
+                Color(0xff000000)
+              ]),
+        ),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -64,7 +83,7 @@ class _MainAppState extends State<MainApp> {
               Text(
                 '$counter',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color(0xffffcc40),
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -83,8 +102,8 @@ class _MainAppState extends State<MainApp> {
                   height: MediaQuery.of(context).size.height * 0.085,
                   width: MediaQuery.of(context).size.width * 0.7,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    color: Color(0xffe88774),
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Color(0xffd19900),
                   ),
                   margin: EdgeInsets.only(top: 10.0),
                   child: Center(
@@ -93,9 +112,7 @@ class _MainAppState extends State<MainApp> {
                       textScaleFactor: 1.5,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
+                          fontWeight: FontWeight.bold, color: Colors.black87),
                     ),
                   ),
                 ),
